@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: youzheJ blog
+title: youzheJ - blog
 subtitle: 好记性不如烂博客...
-description: 什么都想学， 又什么都懒得学 >_<
+description: js html css
 author: youzheJ
 language: zh-CN
 timezone:
@@ -80,3 +80,22 @@ deploy:
   type: git
   repo: https://github.com/YouzheJ/youzhe-blog.git
   branch: master
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true

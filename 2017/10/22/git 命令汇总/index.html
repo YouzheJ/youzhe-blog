@@ -463,6 +463,22 @@
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://blog.youzhej.cn/2017/10/22/git 命令汇总/",
+  owner: 'true',
+  repo: 'https://github.com/YouzheJ/youzhe-blog.git',
+  oauth: {
+    client_id: '8dc724c040757cb2c46e',
+    client_secret: 'feb9e5cf285fd635f361aecc88b874d25ce3c9f0',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>

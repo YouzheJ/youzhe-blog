@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.youzhej.cn">
-  <title>git command | youzheJ blog</title>
+  <title>git 问题汇总 | youzheJ - blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git 命令汇总 基本命令 git init: 初始化一个git仓库 touch .gitignore ：新建.gitignore 文件  clone   123git clone &amp;lt;远程地址&amp;gt; # 克隆远程仓库git clone &amp;lt;远程地址&amp;gt; &amp;lt;目录名&amp;gt; # 克隆远程仓库到指定目录中git clone &amp;lt;仓库地址&amp;gt; -b &amp;lt;分支名或标签&amp;gt">
+  <meta name="description" content="github/gitlab 多账户下设置ssh key   使用命令：ssh-keygen -t rsa -C “注册git的邮箱”，命名时设置不一致的名字即可（idrsa*） 将对应的idrsa*.pub文件内容放到相应的git账号的SSH Keys中 配置config文件：在 .ssh/目录下新建config文件：==touch config== ，内容例子">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git command">
-<meta property="og:url" content="http://blog.youzhej.cn/2017/10/22/git-command/index.html">
-<meta property="og:site_name" content="youzheJ blog">
-<meta property="og:description" content="git 命令汇总 基本命令 git init: 初始化一个git仓库 touch .gitignore ：新建.gitignore 文件  clone   123git clone &amp;lt;远程地址&amp;gt; # 克隆远程仓库git clone &amp;lt;远程地址&amp;gt; &amp;lt;目录名&amp;gt; # 克隆远程仓库到指定目录中git clone &amp;lt;仓库地址&amp;gt; -b &amp;lt;分支名或标签&amp;gt">
+<meta property="og:title" content="git 问题汇总">
+<meta property="og:url" content="http://blog.youzhej.cn/2017/10/22/git-问题汇总/index.html">
+<meta property="og:site_name" content="youzheJ - blog">
+<meta property="og:description" content="github/gitlab 多账户下设置ssh key   使用命令：ssh-keygen -t rsa -C “注册git的邮箱”，命名时设置不一致的名字即可（idrsa*） 将对应的idrsa*.pub文件内容放到相应的git账号的SSH Keys中 配置config文件：在 .ssh/目录下新建config文件：==touch config== ，内容例子">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-22T13:00:37.454Z">
+<meta property="og:updated_time" content="2017-10-22T13:35:04.389Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git command">
-<meta name="twitter:description" content="git 命令汇总 基本命令 git init: 初始化一个git仓库 touch .gitignore ：新建.gitignore 文件  clone   123git clone &amp;lt;远程地址&amp;gt; # 克隆远程仓库git clone &amp;lt;远程地址&amp;gt; &amp;lt;目录名&amp;gt; # 克隆远程仓库到指定目录中git clone &amp;lt;仓库地址&amp;gt; -b &amp;lt;分支名或标签&amp;gt">
+<meta name="twitter:title" content="git 问题汇总">
+<meta name="twitter:description" content="github/gitlab 多账户下设置ssh key   使用命令：ssh-keygen -t rsa -C “注册git的邮箱”，命名时设置不一致的名字即可（idrsa*） 将对应的idrsa*.pub文件内容放到相应的git账号的SSH Keys中 配置config文件：在 .ssh/目录下新建config文件：==touch config== ，内容例子">
   
-    <link rel="alternative" href="/atom.xml" title="youzheJ blog" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="youzheJ - blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -62,7 +62,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/categories/笔记">笔记</a></li>
 	        
 			</ul>
 		</nav>
@@ -128,7 +128,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/categories/笔记">笔记</a></li>
 		        
 				</ul>
 			</nav>
@@ -143,189 +143,92 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git-command" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git-问题汇总" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      git command
+      git 问题汇总
     </h1>
   
 
         
-        <a href="/2017/10/22/git-command/" class="archive-article-date">
-  	<time datetime="2017-10-22T12:44:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-22</time>
+        <a href="/2017/10/22/git-问题汇总/" class="archive-article-date">
+  	<time datetime="2017-10-22T13:33:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="git-命令汇总"><a href="#git-命令汇总" class="headerlink" title="git 命令汇总"></a>git 命令汇总</h3><hr>
-<h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><ul>
-<li>git init: 初始化一个git仓库</li>
-<li><p>touch .gitignore ：新建.gitignore 文件</p>
-</li>
-<li><p>clone</p>
-</li>
+        <ul>
+<li><h4 id="github-gitlab-多账户下设置ssh-key"><a href="#github-gitlab-多账户下设置ssh-key" class="headerlink" title="github/gitlab 多账户下设置ssh key"></a>github/gitlab 多账户下设置ssh key</h4></li>
 </ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">clone</span> <span class="title">&lt;远程地址&gt; # 克隆远程仓库</span></div><div class="line"><span class="title">git</span> <span class="keyword">clone</span> <span class="title">&lt;远程地址&gt; &lt;目录名&gt; # 克隆远程仓库到指定目录中</span></div><div class="line"><span class="title">git</span> <span class="keyword">clone</span> <span class="title">&lt;仓库地址&gt; -b</span> <span class="tag">&lt;分支名或标签&gt;</span> <span class="comment"># 克隆指定分支或标签</span></div></pre></td></tr></table></figure>
+<ol>
+<li>使用命令：ssh-keygen -t rsa -C “注册git的邮箱”，命名时设置不一致的名字即可（id<em>rsa</em>*）</li>
+<li>将对应的id<em>rsa</em>*.pub文件内容放到相应的git账号的SSH Keys中</li>
+<li>配置config文件：在 .ssh/目录下新建config文件：==touch config== ，内容例子</li>
+</ol>
+<a id="more"></a>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#gitlab</span></div><div class="line">Host gitlab.*<span class="string">.com</span></div><div class="line">    HostName gitlab.*<span class="string">.com</span></div><div class="line">    IdentityFile ~<span class="string">/.ssh/id_rsa_</span>*</div><div class="line">    </div><div class="line"><span class="comment">#github</span></div><div class="line">Host github.com</div><div class="line">    HostName github.com</div><div class="line">    IdentityFile ~<span class="string">/.ssh/id_rsa_</span>*</div></pre></td></tr></table></figure>
+<blockquote>
+<h4 id="Host-和-HostName-教程说Host可以随便起，但是亲测不行，需要保持一致，原因不明"><a href="#Host-和-HostName-教程说Host可以随便起，但是亲测不行，需要保持一致，原因不明" class="headerlink" title="Host 和 HostName 教程说Host可以随便起，但是亲测不行，需要保持一致，原因不明"></a>Host 和 HostName 教程说Host可以随便起，但是亲测不行，需要保持一致，原因不明</h4></blockquote>
 <ul>
-<li>添加用户</li>
+<li><h4 id="fatal-Unable-to-create-‘XXX-git-index-lock’-File-exists"><a href="#fatal-Unable-to-create-‘XXX-git-index-lock’-File-exists" class="headerlink" title="fatal: Unable to create ‘XXX/.git/index.lock’: File exists"></a>fatal: Unable to create ‘XXX/.git/index.lock’: File exists</h4></li>
 </ul>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"Your Name"</span></div><div class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"email@example.com"</span></div></pre></td></tr></table></figure>
+<p>解决方法：在.git同级目录，执行rm -f .git/index.lock （或者rm -f git/index.lock） 删除后可提交</p>
 <ul>
-<li>add </li>
+<li><h4 id="git-pull-失败-提示：fatal-refusing-to-merge-unrelated-histories"><a href="#git-pull-失败-提示：fatal-refusing-to-merge-unrelated-histories" class="headerlink" title="git pull 失败 ,提示：fatal: refusing to merge unrelated histories"></a>git pull 失败 ,提示：fatal: refusing to merge unrelated histories</h4></li>
 </ul>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">add</span><span class="bash"> &lt;file&gt; ：添加文件到git仓库。</span></div><div class="line"><span class="bash">git add -u：将文件的修改、文件的删除，添加到暂存区。</span></div><div class="line"><span class="bash">git add .：将文件的修改，文件的新建，添加到暂存区。</span></div><div class="line"><span class="bash">git add -a：将文件的修改，文件的删除，文件的新建，添加到暂存区。</span></div></pre></td></tr></table></figure>
+<p>解决：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span></div></pre></td></tr></table></figure></p>
 <ul>
-<li>commit</li>
-</ul>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"xxx"</span> <span class="comment"># 添加说明， 单行</span></div><div class="line">git commit -<span class="keyword">a</span> <span class="comment"># 添加说明， 使用vim， 可以有多行</span></div><div class="line">git commit <span class="comment">--amend 修改已提交的commit, push过就不行了</span></div></pre></td></tr></table></figure>
-<ul>
-<li>push</li>
-</ul>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git push -u <span class="keyword">origin </span>master <span class="comment"># 第一次推送master分支的所有内容</span></div><div class="line">git push <span class="keyword">origin </span>master <span class="comment"># 推送新版本至远程仓库</span></div><div class="line">git push <span class="keyword">orign </span>local_branch:remote_branch -u <span class="comment"># 第一次推送时关联远程仓库</span></div><div class="line">git push <span class="keyword">orign </span>local_branch:remote_branch <span class="comment"># 将本地的当前分支推送得到远程指定的分支，如果远程不存在则自动创建</span></div><div class="line">git push <span class="keyword">origin </span><span class="built_in">v0</span>.<span class="number">1</span>.<span class="number">2</span> <span class="comment"># 将v0.1.2标签提交到git服务器</span></div><div class="line">git push <span class="keyword">origin </span>--tags <span class="comment"># 将本地所有标签一次性提交到git服务器</span></div><div class="line">git push <span class="keyword">orign </span>:&lt;remote_branch <span class="keyword">or </span>tag&gt; <span class="comment"># 删除远程仓库的分支/标签</span></div></pre></td></tr></table></figure>
-<ul>
-<li>remote</li>
-</ul>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote <span class="builtin-name">add</span> origin git@server-name:path/repo-name.git：关联远程仓库</div><div class="line">git remote <span class="builtin-name">remove</span> upstream：删除上游</div></pre></td></tr></table></figure>
-<ul>
-<li>branch</li>
-</ul>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">git</span> <span class="keyword">branch：查看分支</span></div><div class="line"><span class="keyword">git </span><span class="keyword">branch </span>&lt;name&gt;：创建分支</div><div class="line"><span class="symbol">git</span> <span class="keyword">branch </span>&lt;name&gt; &lt;commit_id&gt;：以某commit创建新的分支</div><div class="line"><span class="symbol">git</span> <span class="keyword">branch </span>-d &lt;name&gt;：删除分支</div></pre></td></tr></table></figure>
-<ul>
-<li>checkout</li>
-</ul>
-<figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git checkout -- <span class="keyword">file</span>：在工作区中，丢弃工作区的修改</div><div class="line">git checkout &lt;<span class="keyword">name</span>&gt;：切换分支</div><div class="line">git checkout -b &lt;<span class="keyword">name</span>&gt;：创建+切换分支</div><div class="line">git checkout --<span class="built_in">merge</span> &lt;<span class="keyword">name</span>&gt;：将当前分支同步切换大 <span class="keyword">name</span> 分支</div><div class="line">git checkout -b local_branch origin/remote_branch 将本地不存在的远程分支拉至本</div><div class="line"></div><div class="line">git reset HEAD <span class="keyword">file</span>：将暂存区的修改回到工作区中，再用git checkout -- <span class="keyword">file</span> 可丢弃暂存区的修改</div></pre></td></tr></table></figure>
-<ul>
-<li>log</li>
+<li><h4 id="HEAD-detached-at-xxxx"><a href="#HEAD-detached-at-xxxx" class="headerlink" title="HEAD detached at xxxx"></a>HEAD detached at xxxx</h4></li>
 </ul>
 <blockquote>
-<h5 id="英文状态下按q退出"><a href="#英文状态下按q退出" class="headerlink" title="英文状态下按q退出"></a>英文状态下按q退出</h5></blockquote>
-<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span> <span class="meta"># 查看提交历史，以便回到过去</span></div><div class="line">git <span class="built_in">log</span> –-<span class="keyword">graph</span> <span class="meta"># 当前分支提交ID的树状图</span></div><div class="line">git <span class="built_in">log</span> --oneline <span class="meta"># 简单的显示</span></div></pre></td></tr></table></figure>
-<ul>
-<li>git status ：查看git的状态</li>
-<li>git diff ： 查看修改的内容</li>
-<li>git reflog：查看历史命令，以便回到未来</li>
-<li><p>git show [tagname] 查看标签信息</p>
-</li>
-<li><p>pull</p>
-</li>
-</ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git pull origin <span class="keyword">master</span> <span class="title"># 将远程的master</span>分支与本地的<span class="literal">master</span>合并</div><div class="line">git pull origin remote_branch:local_branch <span class="comment"># 将远程的remote_branch与本地的local_branch合并</span></div><div class="line"></div><div class="line">git branch --set-upstream <span class="keyword">master</span> <span class="title">origin</span>/next <span class="comment"># 将本地的master分支与origin/next分支建立追踪</span></div></pre></td></tr></table></figure>
-<ul>
-<li>reset</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">reset</span> <span class="comment">--hard commit_id：版本回退，HEAD指向当前版本，HEAD^指向上一个版本</span></div></pre></td></tr></table></figure>
-<ul>
-<li>merge</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">merge</span> &lt;<span class="keyword">name</span>&gt;：合并某分支到当前分支</div><div class="line">git <span class="keyword">merge</span> <span class="comment">--no-ff &lt;name&gt;  保存你之前的分支历史</span></div><div class="line">git <span class="keyword">merge</span> <span class="comment">--squash &lt;name&gt; 使用squash方式合并，把多次分支commit历史压缩为一次</span></div><div class="line">文件已经同合并后一样了，但不移动<span class="keyword">HEAD</span>，不提交。需要进行一次额外的<span class="keyword">commit</span>来“总结”一下，然后完成最终的合并</div></pre></td></tr></table></figure>
-<ul>
-<li>git revert commit_id：版本回退</li>
-</ul>
-<blockquote>
-<h5 id="reset-和-revert的区别"><a href="#reset-和-revert的区别" class="headerlink" title="reset 和 revert的区别"></a>reset 和 revert的区别</h5><ul>
-<li>revert是放弃指定提交的修改，但是会生成一次新的提交，需要填写提交注释，以前的历史记录都在</li>
-<li>reset是指将HEAD指针指到指定提交，历史记录中不会出现放弃的提交记录</li>
-</ul>
+<p>场景：使用git checkout [tagName] 切换标签后出现此情况</p>
+<p>问题说明: 此时HEAD处于游离状态(detached HEAD), 此时进行commit操作不会提交到任何分支上</p>
+<p>解决: git branch 查看分支, git checkout xxx 回到需要的分支</p>
 </blockquote>
 <ul>
-<li>tag </li>
+<li><h4 id="提示-MERGE-HEAD-EXIST"><a href="#提示-MERGE-HEAD-EXIST" class="headerlink" title="提示 MERGE_HEAD EXIST"></a>提示 MERGE_HEAD EXIST</h4></li>
 </ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">tag</span> <span class="title">列出所有标签</span></div><div class="line"><span class="title">git</span> <span class="keyword">tag</span> <span class="title">v0</span>.<span class="number">1.2</span>-light 创建轻量标签</div><div class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v0.<span class="number">1.2</span> -m <span class="string">"0.1.2版本"</span> 创建附注标签</div><div class="line">git <span class="keyword">tag</span> <span class="title">-d</span> v0.<span class="number">1.2</span> 删除标签</div><div class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v0.<span class="number">1.2</span> <span class="number">9</span>fbc3d0 给指定的commit打标签（通过git log获取）</div></pre></td></tr></table></figure>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm <span class="string">.git/MERGE_HEAD</span> <span class="comment"># 移除该文件</span></div></pre></td></tr></table></figure>
 <ul>
-<li>rebase</li>
+<li><h4 id="git-flow"><a href="#git-flow" class="headerlink" title="git flow"></a>git flow</h4></li>
 </ul>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git rebase -i <span class="string">"commit id"</span>^ <span class="meta"># 注意末尾有 ^， 示例： git rebase -i <span class="string">"5b3ba7a"</span>^</span></div><div class="line">git rebase -i 处理多个commit</div></pre></td></tr></table></figure>
-<ul>
-<li>clean</li>
-</ul>
-<figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clean</span> -<span class="built_in">n</span>  # 显示 将要 删除的 文件 和  目录</div><div class="line">git <span class="built_in">clean</span> -df # 删除 文件 和 目录</div><div class="line">git <span class="built_in">clean</span> -f  # 删除 文件</div></pre></td></tr></table></figure>
-<ul>
-<li><h4 id="和-的区别"><a href="#和-的区别" class="headerlink" title="^ 和 ~ 的区别"></a>^ 和 ~ 的区别</h4></li>
-</ul>
-<ol>
-<li>“^”代表父提交,当一个提交有多个父提交时，可以通过在”^”后面跟上一个数字，表示第几个父提交，”^”相当于”^1”.</li>
-<li>~<n>相当于连续的<n>个”^”.</n></n></li>
-<li>checkout只会移动HEAD指针，reset会改变HEAD的引用值。</li>
-</ol>
-<hr>
-<h4 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h4><blockquote>
-<h5 id="部分命令可以按照实际需求更改参数"><a href="#部分命令可以按照实际需求更改参数" class="headerlink" title="部分命令可以按照实际需求更改参数"></a>部分命令可以按照实际需求更改参数</h5></blockquote>
-<ul>
-<li><h4 id="一般的操作流程"><a href="#一般的操作流程" class="headerlink" title="一般的操作流程"></a>一般的操作流程</h4><ul>
-<li><p>初始化仓库</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init <span class="comment"># 创建一个本地仓库</span></div><div class="line">git remote add origin git@server-name:path/repo-name.git <span class="comment"># 关联远程仓库</span></div><div class="line"></div><div class="line"><span class="comment"># 或者克隆远程仓库</span></div><div class="line">git <span class="keyword">clone</span> <span class="title">xxx</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>添加修改并提交到本地</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">add</span><span class="bash"> .</span></div><div class="line"><span class="bash">git commit -m <span class="string">"xxx"</span></span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>- 提交到远程
-
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 第一次提交需要加上 -u</span></div><div class="line">git push origin <span class="keyword">master</span> <span class="title"># 提交本地master</span>分支到远程<span class="literal">master</span>分支</div><div class="line">git push origin local_branch:remote_branch <span class="comment"># 提交本地local_branch分支到远程remote_branch分支(远程不存在会自动创建)</span></div></pre></td></tr></table></figure>
-</code></pre><ul>
-<li><h4 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h4></li>
-</ul>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">log</span> <span class="comment"># 查看历史版本id</span></div><div class="line"></div><div class="line"><span class="comment"># 使用reset</span></div><div class="line">git <span class="keyword">reset</span> --hard commit_id <span class="comment"># 版本回退，HEAD指向当前版本</span></div><div class="line"><span class="comment"># 或者使用revert</span></div><div class="line">git revert commit_id <span class="comment"># 版本回退, 但是会生成新的提交</span></div></pre></td></tr></table></figure>
-<ul>
-<li>回滚远程仓库</li>
-</ul>
-<ol>
-<li>删除最后一次提交</li>
-</ol>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 保留原来的提交历史</span></div><div class="line">git revert HEAD <span class="comment"># 放弃提交的修改， 并生成新的提交</span></div><div class="line">git push origin <span class="literal">master</span></div><div class="line"></div><div class="line"><span class="comment"># 放弃原来的提交历史</span></div><div class="line">git reset --hard HEAD^</div><div class="line">git push origin <span class="keyword">master</span> <span class="title">-f</span> <span class="comment"># reset后，需要强制提交</span></div></pre></td></tr></table></figure>
-<ol>
-<li>删除历史的某次提交</li>
-</ol>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git rebase -i <span class="string">"commit_id"</span>^ <span class="comment"># "commit id"替换为想要删除的提交的"commit id"，需要注意最后的^号，意思是commit id的前一次提交</span></div><div class="line"><span class="comment"># 然后在编辑框中删除你想要删除的提交所在行</span></div><div class="line"></div><div class="line">git push origin <span class="keyword">master</span> <span class="title">-f</span></div></pre></td></tr></table></figure>
-<ol>
-<li>修改历史某次提交</li>
-</ol>
 <blockquote>
-<p>在 2 的基础上将编辑框中的 pick 改为 edit， 然后保存退出</p>
+<p>示例</p>
 </blockquote>
-<p>修改文件， 然后执行以下操作： </p>
-<blockquote>
-<p>如果将多行改为 edit， 需要执行以下操作多次</p>
-</blockquote>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">add</span><span class="bash"> .</span></div><div class="line"><span class="bash">git commit --amend</span></div><div class="line"><span class="bash">git rebase --<span class="built_in">continue</span></span></div></pre></td></tr></table></figure>
 <ul>
-<li><h4 id="push前修改commit"><a href="#push前修改commit" class="headerlink" title="push前修改commit"></a>push前修改commit</h4></li>
+<li>创建develop分支 (从master分支)</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">commit</span> <span class="comment">--amend</span></div></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">git</span> <span class="keyword">branch </span>develop</div><div class="line"><span class="symbol">git</span> <span class="keyword">push </span>-u origin develop</div></pre></td></tr></table></figure>
 <ul>
-<li><h4 id="合并分支时不合并commit"><a href="#合并分支时不合并commit" class="headerlink" title="合并分支时不合并commit"></a>合并分支时不合并commit</h4></li>
+<li>开始新Feature开发(从develop分支)</li>
 </ul>
-<figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">merge</span> --squash &lt;<span class="keyword">name</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git checkout -b <span class="built_in">some</span>-<span class="built_in">feature</span> develop</div><div class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> <span class="built_in">some</span>-<span class="built_in">feature</span>    </div><div class="line"></div><div class="line"># 做一些改动    </div><div class="line">git <span class="built_in">status</span></div><div class="line">git add <span class="built_in">some</span>-file</div><div class="line">git commit</div></pre></td></tr></table></figure>
 <ul>
-<li><h4 id="修改远程地址"><a href="#修改远程地址" class="headerlink" title="修改远程地址"></a>修改远程地址</h4></li>
+<li>完成Feature</li>
 </ul>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote <span class="keyword">remove</span> upstream <span class="meta"># 先删除上游</span></div><div class="line">git remote <span class="keyword">add</span> origin &lt;远程地址&gt; <span class="meta"># 关联远程仓库</span></div></pre></td></tr></table></figure>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">git pull <span class="built_in">origin</span> develop</div><div class="line">git checkout develop</div><div class="line">git merge --no-ff <span class="built_in">some</span>-<span class="built_in">feature</span></div><div class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> develop</div><div class="line"></div><div class="line">git branch -d <span class="built_in">some</span>-<span class="built_in">feature</span></div><div class="line"></div><div class="line"># If you pushed branch to <span class="built_in">origin</span>:</div><div class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> <span class="built_in">some</span>-<span class="built_in">feature</span></div></pre></td></tr></table></figure>
 <ul>
-<li><h4 id="删除远程仓库的分支或标签"><a href="#删除远程仓库的分支或标签" class="headerlink" title="删除远程仓库的分支或标签"></a>删除远程仓库的分支或标签</h4></li>
+<li>开始Relase</li>
 </ul>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push orign <span class="symbol">:&lt;remote_branch</span> <span class="keyword">or</span> tag&gt; <span class="comment"># 删除远程仓库的分支/标签</span></div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout -b <span class="keyword">release</span><span class="number">-0.1</span><span class="number">.0</span> develop</div><div class="line"></div><div class="line"># Optional: Bump <span class="keyword">version</span> <span class="built_in">number</span>, <span class="keyword">commit</span></div><div class="line"># <span class="keyword">Prepare</span> <span class="keyword">release</span>, <span class="keyword">commit</span></div></pre></td></tr></table></figure>
 <ul>
-<li><h4 id="撤销操作"><a href="#撤销操作" class="headerlink" title="撤销操作"></a>撤销操作</h4><ul>
-<li><p>丢弃工作区的修改</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">git</span> checkout -- file <span class="comment"># 丢弃指定文件</span></div><div class="line">git checkout -- . <span class="comment"># 丢弃所有</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>丢弃commit</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">reset</span> <span class="keyword">HEAD</span> <span class="keyword">file</span> # 将暂存区的修改回到工作区中</div></pre></td></tr></table></figure>
-</li>
-<li><p>撤销指定文件到指定版本</p>
-<figure class="highlight pf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查看指定文件的历史版本</span></div><div class="line">git <span class="keyword">log</span> <span class="variable">&lt;filename&gt;</span></div><div class="line"><span class="comment"># 回滚到指定commitID</span></div><div class="line">git checkout <span class="variable">&lt;commitID&gt;</span> -- <span class="variable">&lt;filename&gt;</span></div></pre></td></tr></table></figure></li>
+<li>完成Release(将release合并到master和develop分支)</li>
 </ul>
-</li>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">git checkout <span class="literal">master</span></div><div class="line">git merge --no-ff release-<span class="number">0.1</span>.<span class="number">0</span></div><div class="line">git push</div><div class="line"></div><div class="line">git checkout develop</div><div class="line">git merge --no-ff release-<span class="number">0.1</span>.<span class="number">0</span></div><div class="line">git push</div><div class="line"></div><div class="line">git branch -d release-<span class="number">0.1</span>.<span class="number">0</span></div><div class="line"></div><div class="line"><span class="comment"># If you pushed branch to origin:</span></div><div class="line">git push origin --delete release-<span class="number">0.1</span>.<span class="number">0</span></div><div class="line"></div><div class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v0.<span class="number">1.0</span> <span class="literal">master</span></div><div class="line">git push --tags</div></pre></td></tr></table></figure>
+<ul>
+<li>开始Hotfix</li>
 </ul>
-
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">git</span> <span class="selector-tag">checkout</span> <span class="selector-tag">-b</span> <span class="selector-tag">hotfix-0</span><span class="selector-class">.1</span><span class="selector-class">.1</span> <span class="selector-tag">master</span></div></pre></td></tr></table></figure>
+<ul>
+<li>完成Hotfix</li>
+</ul>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">git checkout <span class="literal">master</span></div><div class="line">git merge --no-ff hotfix-<span class="number">0.1</span>.<span class="number">1</span></div><div class="line">git push</div><div class="line"></div><div class="line">git checkout develop</div><div class="line">git merge --no-ff hotfix-<span class="number">0.1</span>.<span class="number">1</span></div><div class="line">git push</div><div class="line"></div><div class="line">git branch -d hotfix-<span class="number">0.1</span>.<span class="number">1</span></div><div class="line"></div><div class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v0.<span class="number">1.1</span> <span class="literal">master</span></div><div class="line">git push --tags</div></pre></td></tr></table></figure>
       
 
       
@@ -409,7 +312,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.youzhej.cn/2017/10/22/git-command/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.youzhej.cn/2017/10/22/git-问题汇总/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -421,6 +324,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/22/git-使用教程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git 使用教程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">

@@ -61,7 +61,6 @@ Git：
         ```
         $ git add readme.txt
         ```
-        
         > 没有提示即正确
         
         - 第二步，用命令git commit告诉Git，把文件提交到仓库：
@@ -69,7 +68,6 @@ Git：
         ```
         $ git commit -m "wrote a readme file"
         ```
-        
         > git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
         
         commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：
@@ -79,9 +77,7 @@ Git：
         $ git add file2.txt file3.txt
         $ git commit -m "add 3 files."
         ```
-        
         > ##### 注意：所有的版本控制系统，其实只能跟踪文本文件的改动
-        
         > - 比如TXT文件，网页，所有的程序代码等等，Git也不例外。
         > - 版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。
         > - 而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，
@@ -107,9 +103,8 @@ Git：
     ```
     $ git status
     ```
-    
     - 查看仓库当前的状态
-    
+
     > 用git diff命令查看具体修改
     
     ```
@@ -123,7 +118,6 @@ Git：
         ```
         $ git add readme.txt
         ```
-        
         > 同样没有任何输出。
         
         - 在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：
@@ -137,7 +131,6 @@ Git：
         #       modified:   readme.txt
         #
         ```
-        
         > git status显示，将要被提交的修改包括readme.txt，
         
         - 下一步，就可以提交了：
@@ -145,17 +138,13 @@ Git：
         ```
         $ git commit -m "add distributed"
         ```
-    
     - 版本回退
-    
     > 用git log命令查看历史记录：
     
     ```
     $ git log
     ```
-    
     > 加上--pretty=oneline参数，可减少输出的信息
-    
     > 版本回退,使用git reset命令：
     
     ```
@@ -163,7 +152,6 @@ Git：
     
     # HEAD is now at ea34578 add distributed       (ea34578 位版本id)
     ```
-    
     > 在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写成HEAD~100。
     
     - 查看文件内容：
@@ -171,7 +159,6 @@ Git：
     ```
     $ cat readme.txt
     ```
-    
     > 注意：只要上面的命令行窗口还没有被关掉，就可以回退到新的版本。
     
     ```
@@ -184,7 +171,6 @@ Git：
     ```
     $ git reflog
     ```
-    
     > 当你用$ git reset --hard HEAD^回退到add distributed版本时，再想恢复到append GPL，就必须使用以上命令找到append GPL的commit id。
 
 - #### 工作区（Working Directory）
@@ -215,7 +201,6 @@ Git：
     ```
     $ git checkout -- readme.txt
     ```
-    
     > 命令的意思是把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
     > - 一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
     > - 一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
@@ -233,14 +218,12 @@ Git：
     ```
     $ rm test.txt
     ```
-    
     > 然后可以有一下两种操作：
     > 1. 在版本刻库删除
     
     ```
     $ git rm test.txt
     ```
-    
     > 2. 从版本库恢复到工作区
     
     ```
@@ -287,7 +270,6 @@ repository”按钮，就成功地创建了一个新的Git仓库。
 ```
 $ git remote add origin git@github.com:michaelliao/learngit.git
 ```
-
 > 注意，把上面的michaelliao替换成自己的GitHub账户名。
 
 添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的。

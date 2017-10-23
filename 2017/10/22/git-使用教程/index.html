@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="youzheJ - blog">
 <meta property="og:description" content="概述  Git：  Git是目前世界上最先进的分布式版本控制系统（没有之一）。 集中式/分布式： 集中式版本控制系统，版本库是集中存放在中央服务器的，必须联网才能工作。 SVN 是目前用得最多的集中式版本库控制系统。 分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-22T13:32:13.357Z">
+<meta property="og:updated_time" content="2017-10-23T14:04:56.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 使用教程">
 <meta name="twitter:description" content="概述  Git：  Git是目前世界上最先进的分布式版本控制系统（没有之一）。 集中式/分布式： 集中式版本控制系统，版本库是集中存放在中央服务器的，必须联网才能工作。 SVN 是目前用得最多的集中式版本库控制系统。 分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。">
@@ -24,7 +24,7 @@
     <link rel="alternative" href="/atom.xml" title="youzheJ - blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
@@ -207,44 +207,39 @@
 <ul>
 <li><p>第一步，用命令git add告诉Git，把文件添加到仓库：</p>
 <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">add</span><span class="bash"> readme.txt</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>没有提示即正确</p>
+</blockquote>
 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>&gt; 没有提示即正确
-
-- 第二步，用命令git commit告诉Git，把文件提交到仓库：
-
+<li><p>第二步，用命令git commit告诉Git，把文件提交到仓库：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">"wrote a readme file"</span></span></div></pre></td></tr></table></figure>
-
-
-&gt; git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
-
-commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：
-
+<blockquote>
+<p>git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。</p>
+</blockquote>
+<p>commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：</p>
 <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">add</span><span class="bash"> file1.txt</span></div><div class="line"><span class="bash">$ git add file2.txt file3.txt</span></div><div class="line"><span class="bash">$ git commit -m <span class="string">"add 3 files."</span></span></div></pre></td></tr></table></figure>
-
-
-&gt; ##### 注意：所有的版本控制系统，其实只能跟踪文本文件的改动
-
-&gt; - 比如TXT文件，网页，所有的程序代码等等，Git也不例外。
-&gt; - 版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。
-&gt; - 而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，
-&gt; - 也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道。
-
-&gt; 不幸的是，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的，前面举的例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。
-
-&gt; 因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的UTF-8编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持。
-
-&gt; 使用Windows要特别注意：
-
-&gt; - 千万不要使用Windows自带的记事本编辑任何文本文件。
-&gt; - 原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，
-&gt; - 你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。
-&gt; - 建议你下载Notepad++代替记事本，不但功能强大，而且免费！记得把Notepad++的默认编码设置为UTF-8 without BOM即可。
-</code></pre><ul>
+<blockquote>
+<h5 id="注意：所有的版本控制系统，其实只能跟踪文本文件的改动"><a href="#注意：所有的版本控制系统，其实只能跟踪文本文件的改动" class="headerlink" title="注意：所有的版本控制系统，其实只能跟踪文本文件的改动"></a>注意：所有的版本控制系统，其实只能跟踪文本文件的改动</h5><ul>
+<li>比如TXT文件，网页，所有的程序代码等等，Git也不例外。</li>
+<li>版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。</li>
+<li>而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，</li>
+<li>也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道。</li>
+</ul>
+<p>不幸的是，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的，前面举的例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。</p>
+<p>因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的UTF-8编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持。</p>
+<p>使用Windows要特别注意：</p>
+<ul>
+<li>千万不要使用Windows自带的记事本编辑任何文本文件。</li>
+<li>原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，</li>
+<li>你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。</li>
+<li>建议你下载Notepad++代替记事本，不但功能强大，而且免费！记得把Notepad++的默认编码设置为UTF-8 without BOM即可。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><h4 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h4><ul>
 <li><p>修改文件内容</p>
 <blockquote>
@@ -252,71 +247,65 @@ commit可以一次提交很多文件，所以你可以多次add不同的文件�
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git status</span></div></pre></td></tr></table></figure>
 </li>
-</ul>
+<li><p>查看仓库当前的状态</p>
+<blockquote>
+<p>用git diff命令查看具体修改</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git diff readme.txt</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>git diff顾名思义就是查看difference，显示的格式正是Unix通用的diff格式</p>
+</blockquote>
+</li>
+<li><p>提交修改和提交新文件是一样的两步</p>
+<ul>
+<li><p>第一步是git add：</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">add</span><span class="bash"> readme.txt</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>同样没有任何输出。</p>
+</blockquote>
+</li>
+<li><p>在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git status</span></div><div class="line"><span class="meta">#</span><span class="bash"> On branch master</span></div><div class="line"><span class="meta">#</span><span class="bash"> Changes to be committed:</span></div><div class="line"><span class="meta">#</span><span class="bash">   (use <span class="string">"git reset HEAD &lt;file&gt;..."</span> to unstage)</span></div><div class="line"><span class="meta">#</span><span class="bash"></span></div><div class="line"><span class="meta">#</span><span class="bash">       modified:   readme.txt</span></div><div class="line"><span class="meta">#</span><span class="bash"></span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>git status显示，将要被提交的修改包括readme.txt，</p>
+</blockquote>
+</li>
+<li><p>下一步，就可以提交了：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">"add distributed"</span></span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<pre><code>- 查看仓库当前的状态
-
-&gt; 用git diff命令查看具体修改
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git diff readme.txt</span></div></pre></td></tr></table></figure>
-
-&gt; git diff顾名思义就是查看difference，显示的格式正是Unix通用的diff格式
-
-- 提交修改和提交新文件是一样的两步
-    - 第一步是git add：
-
-    <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">add</span><span class="bash"> readme.txt</span></div></pre></td></tr></table></figure>
-
-
-    &gt; 同样没有任何输出。
-
-    - 在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：
-
-    <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git status</span></div><div class="line"><span class="meta">#</span><span class="bash"> On branch master</span></div><div class="line"><span class="meta">#</span><span class="bash"> Changes to be committed:</span></div><div class="line"><span class="meta">#</span><span class="bash">   (use <span class="string">"git reset HEAD &lt;file&gt;..."</span> to unstage)</span></div><div class="line"><span class="meta">#</span><span class="bash"></span></div><div class="line"><span class="meta">#</span><span class="bash">       modified:   readme.txt</span></div><div class="line"><span class="meta">#</span><span class="bash"></span></div></pre></td></tr></table></figure>
-
-
-    &gt; git status显示，将要被提交的修改包括readme.txt，
-
-    - 下一步，就可以提交了：
-
-    <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">"add distributed"</span></span></div></pre></td></tr></table></figure>
-
-
-- 版本回退
-
-&gt; 用git log命令查看历史记录：
-
+</li>
+<li><p>版本回退</p>
+<blockquote>
+<p>用git log命令查看历史记录：</p>
+</blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span></span></div></pre></td></tr></table></figure>
-
-
-&gt; 加上--pretty=oneline参数，可减少输出的信息
-
-&gt; 版本回退,使用git reset命令：
-
+<blockquote>
+<p>加上–pretty=oneline参数，可减少输出的信息<br>版本回退,使用git reset命令：</p>
+</blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">reset</span> <span class="comment">--hard HEAD^</span></div><div class="line"></div><div class="line"># <span class="keyword">HEAD</span> <span class="keyword">is</span> <span class="keyword">now</span> <span class="keyword">at</span> ea34578 <span class="keyword">add</span> <span class="keyword">distributed</span>       (ea34578 位版本<span class="keyword">id</span>)</div></pre></td></tr></table></figure>
-
-
-&gt; 在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写成HEAD~100。
-
-- 查看文件内容：
-
+<blockquote>
+<p>在Git中，用HEAD表示当前版本，也就是最新的提交3628164…882e1e0，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写成HEAD~100。</p>
+</blockquote>
+</li>
+<li><p>查看文件内容：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> cat readme.txt</span></div></pre></td></tr></table></figure>
-
-
-&gt; 注意：只要上面的命令行窗口还没有被关掉，就可以回退到新的版本。
-
+<blockquote>
+<p>注意：只要上面的命令行窗口还没有被关掉，就可以回退到新的版本。</p>
+</blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git reset --hard 3628164</span></div></pre></td></tr></table></figure>
-
-&gt; (版本号没必要写全，前几位就行，Git会自动去找。)
-
-- 查看命令历史，以便确定要回到未来的哪个版本：
-
+<blockquote>
+<p>(版本号没必要写全，前几位就行，Git会自动去找。)</p>
+</blockquote>
+</li>
+<li><p>查看命令历史，以便确定要回到未来的哪个版本：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git reflog</span></div></pre></td></tr></table></figure>
-
-
-&gt; 当你用$ git reset --hard HEAD^回退到add distributed版本时，再想恢复到append GPL，就必须使用以上命令找到append GPL的commit id。
-</code></pre><ul>
+<blockquote>
+<p>当你用$ git reset –hard HEAD^回退到add distributed版本时，再想恢复到append GPL，就必须使用以上命令找到append GPL的commit id。</p>
+</blockquote>
+</li>
+</ul>
+</li>
 <li><h4 id="工作区（Working-Directory）"><a href="#工作区（Working-Directory）" class="headerlink" title="工作区（Working Directory）"></a>工作区（Working Directory）</h4></li>
 </ul>
 <blockquote>
@@ -350,36 +339,41 @@ commit可以一次提交很多文件，所以你可以多次add不同的文件�
 <ul>
 <li><p>撤销工作区修改</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git checkout -- readme.txt</span></div></pre></td></tr></table></figure>
-</li>
+<blockquote>
+<p>命令的意思是把readme.txt文件在工作区的修改全部撤销，这里有两种情况：</p>
+<ul>
+<li>一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；</li>
+<li>一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。</li>
 </ul>
+</blockquote>
 </li>
-</ul>
-<pre><code>&gt; 命令的意思是把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
-&gt; - 一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
-&gt; - 一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
-
-- 撤销暂存区的修改，重新放回到工作区。
-
+<li><p>撤销暂存区的修改，重新放回到工作区。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git reset HEAD readme.txt</span></div></pre></td></tr></table></figure>
-</code></pre><ul>
+</li>
+</ul>
+</li>
 <li><p>删除文件</p>
 <ul>
 <li><p>工作区删除文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> rm test.txt</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>&gt; 然后可以有一下两种操作：
-&gt; 1. 在版本刻库删除
-
+<blockquote>
+<p>然后可以有一下两种操作：</p>
+<ol>
+<li>在版本刻库删除</li>
+</ol>
+</blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git rm test.txt</span></div></pre></td></tr></table></figure>
-
-
-&gt; 2. 从版本库恢复到工作区
-
+<blockquote>
+<ol>
+<li>从版本库恢复到工作区</li>
+</ol>
+</blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> git checkout -- test.txt</span></div></pre></td></tr></table></figure>
-</code></pre><ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
 <li>远程仓库</li>
 </ul>
 <blockquote>
@@ -750,7 +744,59 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">sass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">compass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">sprite</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">flex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">npm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vps</a>
               </li>
             
             <div class="clearfix"></div>

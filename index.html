@@ -22,7 +22,7 @@
     <link rel="alternative" href="/atom.xml" title="youzheJ - blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
@@ -143,36 +143,31 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-git-问题汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-私有npm的搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/git-问题汇总/">git 问题汇总</a>
+      <a class="article-title" href="/2017/10/23/私有npm的搭建/">私有npm的搭建</a>
     </h1>
   
 
         
-        <a href="/2017/10/22/git-问题汇总/" class="archive-article-date">
-  	<time datetime="2017-10-22T13:33:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-22</time>
+        <a href="/2017/10/23/私有npm的搭建/" class="archive-article-date">
+  	<time datetime="2017-10-23T09:59:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li><h4 id="github-gitlab-多账户下设置ssh-key"><a href="#github-gitlab-多账户下设置ssh-key" class="headerlink" title="github/gitlab 多账户下设置ssh key"></a>github/gitlab 多账户下设置ssh key</h4></li>
-</ul>
-<ol>
-<li>使用命令：ssh-keygen -t rsa -C “注册git的邮箱”，命名时设置不一致的名字即可（id<em>rsa</em>*）</li>
-<li>将对应的id<em>rsa</em>*.pub文件内容放到相应的git账号的SSH Keys中</li>
-<li>配置config文件：在 .ssh/目录下新建config文件：==touch config== ，内容例子</li>
-</ol>
+        <h4 id="sinopia"><a href="#sinopia" class="headerlink" title="sinopia"></a>sinopia</h4><blockquote>
+<h4 id="现在作者已经停止维护-可以改为使用-Verdaccio"><a href="#现在作者已经停止维护-可以改为使用-Verdaccio" class="headerlink" title="现在作者已经停止维护, 可以改为使用 Verdaccio"></a>现在作者已经停止维护, 可以改为使用 Verdaccio</h4></blockquote>
+<p><a href="https://segmentfault.com/a/1190000005790827#articleHeader0" target="_blank" rel="external">https://segmentfault.com/a/1190000005790827#articleHeader0</a></p>
         
-          <a class="article-more-a" href="/2017/10/22/git-问题汇总/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/23/私有npm的搭建/#more">more >></a>
         
       
 
@@ -186,7 +181,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -202,7 +201,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/git//" class="article-tag-list-link color4">git</a>
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/node/npm//" class="article-tag-list-link color4">npm</a>
         		</li>
       		
 		</ul>
@@ -237,20 +240,317 @@
 
 
   
-    <article id="post-git-使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-npm-基础笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/git-使用教程/">git 使用教程</a>
+      <a class="article-title" href="/2017/10/23/npm-基础笔记/">npm 基础笔记</a>
     </h1>
   
 
         
-        <a href="/2017/10/22/git-使用教程/" class="archive-article-date">
-  	<time datetime="2017-10-22T13:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-22</time>
+        <a href="/2017/10/23/npm-基础笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T09:56:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>npm依赖关系图 <a href="https://exploringdata.github.io/vis/npm-packages-dependencies/" target="_blank" rel="external">https://exploringdata.github.io/vis/npm-packages-dependencies/</a></p>
+<h4 id="npm-查看全局安装过的包"><a href="#npm-查看全局安装过的包" class="headerlink" title="npm 查看全局安装过的包"></a>npm 查看全局安装过的包</h4><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="built_in">list</span> -g <span class="comment">--depth 0</span></div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/10/23/npm-基础笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/node/npm//" class="article-tag-list-link color4">npm</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-sass-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/sass-笔记/">sass 笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/sass-笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T09:52:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>sass入门 <a href="http://www.w3cplus.com/sassguide/index.html" target="_blank" rel="external">http://www.w3cplus.com/sassguide/index.html</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4>
+        
+          <a class="article-more-a" href="/2017/10/23/sass-笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-flex-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/flex-笔记/">flex 笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/flex-笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T05:23:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</a><br><a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</a></p>
+<hr>
+<h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4>
+        
+          <a class="article-more-a" href="/2017/10/23/flex-笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">flex</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-css-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/css-笔记/">css 笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/css-笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T05:20:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
 </a>
         
       </header>
@@ -258,20 +558,415 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4></li>
+<li><h4 id="修改选中文字的颜色，兼容ie9-（包括ie9）"><a href="#修改选中文字的颜色，兼容ie9-（包括ie9）" class="headerlink" title="修改选中文字的颜色，兼容ie9+（包括ie9）"></a>修改选中文字的颜色，兼容ie9+（包括ie9）</h4></li>
 </ul>
-<p>Git：</p>
+        
+          <a class="article-more-a" href="/2017/10/23/css-笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-compass-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/compass-笔记/">compass 笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/compass-笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T04:03:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>和sass一样依赖于ruby, 并且需要在sass或scss中使用</p>
+</blockquote>
+<h4 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h4>
+        
+          <a class="article-more-a" href="/2017/10/23/compass-笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">compass</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">sprite</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-React-基础笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/React-基础笔记/">React 基础笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/React-基础笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T04:00:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>中文文档 <a href="https://discountry.github.io/react/?utm_source=qq&amp;utm_medium=social" target="_blank" rel="external">https://discountry.github.io/react/?utm_source=qq&amp;utm_medium=social</a></p>
+<p>阮一峰的React技术栈系列教程 <a href="http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html</a></p>
+        
+          <a class="article-more-a" href="/2017/10/23/React-基础笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/react//" class="article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-React-使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/React-使用笔记/">React 使用笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/React-使用笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T03:58:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="react点击事件传参，通过bind传递"><a href="#react点击事件传参，通过bind传递" class="headerlink" title="react点击事件传参，通过bind传递"></a>react点击事件传参，通过bind传递</h4><ul>
+<li>this.handleclick.bind（this，要传的参数）handleclick（要传的参数，event）</li>
+</ul>
+        
+          <a class="article-more-a" href="/2017/10/23/React-使用笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/react//" class="article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue-学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/23/vue-学习笔记/">vue 学习笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/23/vue-学习笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T03:52:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h4 id="ESLint-代码检查工具"><a href="#ESLint-代码检查工具" class="headerlink" title="ESLint  代码检查工具"></a>ESLint  代码检查工具</h4></blockquote>
 <ul>
-<li>Git是目前世界上最先进的分布式版本控制系统（没有之一）。</li>
-<li>集中式/分布式：<ul>
-<li>集中式版本控制系统，版本库是集中存放在中央服务器的，必须联网才能工作。</li>
-<li>SVN 是目前用得最多的集中式版本库控制系统。</li>
-<li>分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。</li>
-</ul>
-</li>
+<li>function () {} ,function后的 () 需要前后空格</li>
+<li>字符串要用 ‘’,不能用 “”</li>
+<li>逗号 , 后需要一个空格</li>
+<li>每一级的缩进都需要两个空格</li>
 </ul>
         
-          <a class="article-more-a" href="/2017/10/22/git-使用教程/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/23/vue-学习笔记/#more">more >></a>
         
       
 
@@ -285,7 +980,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
         		</li>
       		
 		</ul>
@@ -301,7 +1000,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/git//" class="article-tag-list-link color4">git</a>
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/vue//" class="article-tag-list-link color4">vue</a>
         		</li>
       		
 		</ul>
@@ -336,36 +1039,35 @@
 
 
   
-    <article id="post-git 命令汇总" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-canvas-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/git 命令汇总/">git 命令汇总</a>
+      <a class="article-title" href="/2017/10/23/canvas-笔记/">canvas 笔记</a>
     </h1>
   
 
         
-        <a href="/2017/10/22/git 命令汇总/" class="archive-article-date">
-  	<time datetime="2017-10-22T12:44:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-22</time>
+        <a href="/2017/10/23/canvas-笔记/" class="archive-article-date">
+  	<time datetime="2017-10-23T03:49:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><ul>
-<li>git init: 初始化一个git仓库</li>
-<li><p>touch .gitignore ：新建.gitignore 文件</p>
+        <ul>
+<li>资料 <a href="https://segmentfault.com/a/1190000008071757" target="_blank" rel="external">https://segmentfault.com/a/1190000008071757</a></li>
+<li><p>手册 <a href="http://canvas.migong.org/html5-canvas" target="_blank" rel="external">http://canvas.migong.org/html5-canvas</a></p>
 </li>
-<li><p>clone</p>
+<li><p>初始化</p>
 </li>
 </ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">clone</span> <span class="title">&lt;远程地址&gt; # 克隆远程仓库</span></div><div class="line"><span class="title">git</span> <span class="keyword">clone</span> <span class="title">&lt;远程地址&gt; &lt;目录名&gt; # 克隆远程仓库到指定目录中</span></div><div class="line"><span class="title">git</span> <span class="keyword">clone</span> <span class="title">&lt;仓库地址&gt; -b</span> <span class="tag">&lt;分支名或标签&gt;</span> <span class="comment"># 克隆指定分支或标签</span></div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/10/22/git 命令汇总/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/23/canvas-笔记/#more">more >></a>
         
       
 
@@ -379,7 +1081,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
         		</li>
       		
 		</ul>
@@ -395,7 +1101,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/git//" class="article-tag-list-link color4">git</a>
+        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/前端/canvas//" class="article-tag-list-link color2">canvas</a>
         		</li>
       		
 		</ul>
@@ -430,6 +1140,10 @@
 
 
   
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -515,7 +1229,59 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">sass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">compass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">sprite</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">flex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">npm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vps</a>
               </li>
             
             <div class="clearfix"></div>

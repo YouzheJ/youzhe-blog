@@ -12,6 +12,9 @@ categories:
 1. 使用命令：ssh-keygen -t rsa -C "注册git的邮箱"，命名时设置不一致的名字即可（id_rsa_*）
 2. 将对应的id_rsa_*.pub文件内容放到相应的git账号的SSH Keys中
 3. 配置config文件：在 .ssh/目录下新建config文件：==touch config== ，内容例子
+
+<!--more-->
+
 ```
 #gitlab
 Host gitlab.*.com

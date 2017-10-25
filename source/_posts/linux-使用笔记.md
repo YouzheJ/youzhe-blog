@@ -54,6 +54,26 @@ sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel g
 yum -y install git # 安装git
 ```
 
+- linux上一些常用的文件操作命令
+
+```bash
+pwd # 查看当前路径
+
+mkdir xxx # 创建目录
+
+touch xxx # 创建文件
+
+rm xxx # 删除文件
+rm -rf xxx # 删除文件夹（注意xxx不要出错。。）
+
+cp /root/a.txt /tmp # 复制root的a.txt到tmp目录下
+cp /root/* /tmp # 复制root下的所有文件到tmp目录下
+cp -r /root/ /tmp # 复制root文件夹到tmp目录下
+
+mv dir/ /home/ # 移动dir到home目录下
+mv dir/ home # 将dir文件改名为home
+```
+
 - linux权限说明
 
 查看权限：在linux终端输入

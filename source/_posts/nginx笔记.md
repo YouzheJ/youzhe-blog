@@ -162,6 +162,28 @@ http {
 }
 ```
 
+- 增加一个静态服务器， 并通过二级域名访问
+
+```bash
+...
+http {
+    ...
+    server {
+        ...
+    }
+    server {
+        listen          80;
+        server_name     xxx.yuming.com www.xxx.yuming.com;
+        location / {
+            root        /xxx/xxx; # 项目的具体位置
+            index       index.html; # 根据实际而定
+        }
+    }
+}
+```
+
+> 如果出现403错误， 可能是文件或文件夹的权限问题，需要检查一下root整个路径的权限
+
 ---
 #### 错误处理
 

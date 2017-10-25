@@ -4,7 +4,7 @@ date: 2017-10-24 11:19:06
 tags:
 - 前端
 - webpack
-- React
+- react
 categories:
 - 笔记
 - 前端

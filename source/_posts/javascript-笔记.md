@@ -7,7 +7,7 @@ tags:
 categories:
 - 笔记
 - 前端
-- javascript
+- JavaScript
 ---
 
 > 分类目录

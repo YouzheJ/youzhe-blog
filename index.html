@@ -60,6 +60,8 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/categories/文章">文章</a></li>
+	        
 				<li><a href="/categories/笔记">笔记</a></li>
 	        
 			</ul>
@@ -110,6 +112,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -121,12 +125,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/categories/笔记">笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/文章">文章</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/categories/笔记">笔记</a></li>
 		        
 				</ul>
 			</nav>
@@ -143,31 +149,29 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-私有npm的搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-git-flow-合并分支的一些事" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/私有npm的搭建/">私有npm的搭建</a>
+      <a class="article-title" href="/2017/12/17/git-flow-合并分支的一些事/">git flow 合并分支的一些事</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/私有npm的搭建/" class="archive-article-date">
-  	<time datetime="2017-10-23T09:59:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/12/17/git-flow-合并分支的一些事/" class="archive-article-date">
+  	<time datetime="2017-12-17T12:25:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="sinopia"><a href="#sinopia" class="headerlink" title="sinopia"></a>sinopia</h4><blockquote>
-<h4 id="现在作者已经停止维护-可以改为使用-Verdaccio"><a href="#现在作者已经停止维护-可以改为使用-Verdaccio" class="headerlink" title="现在作者已经停止维护, 可以改为使用 Verdaccio"></a>现在作者已经停止维护, 可以改为使用 Verdaccio</h4></blockquote>
-<p><a href="https://segmentfault.com/a/1190000005790827#articleHeader0" target="_blank" rel="external">https://segmentfault.com/a/1190000005790827#articleHeader0</a></p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近工作中用到了 git flow 进行开发，确实按照规范进行开发可以避免一些不必要的麻烦，但是在实际使用中，还是遇到了一些问题。这里主要想谈谈分支合并时，避免和解决冲突的一些操作。</p>
         
-          <a class="article-more-a" href="/2017/10/23/私有npm的搭建/#more">more >></a>
+          <a class="article-more-a" href="/2017/12/17/git-flow-合并分支的一些事/#more">more >></a>
         
       
 
@@ -181,9 +185,92 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/文章//" class="article-tag-list-link color3">文章</a>
         		</li>
       		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/文章/git//" class="article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-深入浅出nodejs笔记-8-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/08/深入浅出nodejs笔记-8-11/">深入浅出nodejs笔记(8-11)</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/08/深入浅出nodejs笔记-8-11/" class="archive-article-date">
+  	<time datetime="2017-11-08T08:33:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="第八章-构建web应用"><a href="#第八章-构建web应用" class="headerlink" title="第八章 构建web应用"></a>第八章 构建web应用</h3>
+        
+          <a class="article-more-a" href="/2017/11/08/深入浅出nodejs笔记-8-11/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
@@ -203,10 +290,6 @@
         		<li class="article-tag-list-item">
         			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/node/npm//" class="article-tag-list-link color4">npm</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -240,30 +323,29 @@
 
 
   
-    <article id="post-npm-基础笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-深入浅出nodejs笔记-5-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/npm-基础笔记/">npm 基础笔记</a>
+      <a class="article-title" href="/2017/11/08/深入浅出nodejs笔记-5-7/">深入浅出nodejs笔记(5-7)</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/npm-基础笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T09:56:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/11/08/深入浅出nodejs笔记-5-7/" class="archive-article-date">
+  	<time datetime="2017-11-08T08:32:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>npm依赖关系图 <a href="https://exploringdata.github.io/vis/npm-packages-dependencies/" target="_blank" rel="external">https://exploringdata.github.io/vis/npm-packages-dependencies/</a></p>
-<h4 id="npm-查看全局安装过的包"><a href="#npm-查看全局安装过的包" class="headerlink" title="npm 查看全局安装过的包"></a>npm 查看全局安装过的包</h4><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="built_in">list</span> -g <span class="comment">--depth 0</span></div></pre></td></tr></table></figure>
+        <h3 id="第五章-内存控制"><a href="#第五章-内存控制" class="headerlink" title="第五章 内存控制"></a>第五章 内存控制</h3>
         
-          <a class="article-more-a" href="/2017/10/23/npm-基础笔记/#more">more >></a>
+          <a class="article-more-a" href="/2017/11/08/深入浅出nodejs笔记-5-7/#more">more >></a>
         
       
 
@@ -276,10 +358,6 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
@@ -299,10 +377,6 @@
         		<li class="article-tag-list-item">
         			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/node/npm//" class="article-tag-list-link color4">npm</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -336,30 +410,31 @@
 
 
   
-    <article id="post-sass-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-深入浅出nodejs笔记-1-4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/sass-笔记/">sass 笔记</a>
+      <a class="article-title" href="/2017/11/08/深入浅出nodejs笔记-1-4/">深入浅出nodejs笔记(1-4)</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/sass-笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T09:52:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/11/08/深入浅出nodejs笔记-1-4/" class="archive-article-date">
+  	<time datetime="2017-11-08T08:30:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>sass入门 <a href="http://www.w3cplus.com/sassguide/index.html" target="_blank" rel="external">http://www.w3cplus.com/sassguide/index.html</a></p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4>
+        <h3 id="第一章-简介"><a href="#第一章-简介" class="headerlink" title="第一章 简介"></a>第一章 简介</h3><ul>
+<li>高性能web服务器的特点： 事件驱动、非阻塞I/O</li>
+</ul>
         
-          <a class="article-more-a" href="/2017/10/23/sass-笔记/#more">more >></a>
+          <a class="article-more-a" href="/2017/11/08/深入浅出nodejs笔记-1-4/#more">more >></a>
         
       
 
@@ -373,15 +448,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -397,11 +464,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -436,31 +499,29 @@
 
 
   
-    <article id="post-flex-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-mongoDB与mongoose" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/flex-笔记/">flex 笔记</a>
+      <a class="article-title" href="/2017/11/08/mongoDB与mongoose/">mongoDB与mongoose</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/flex-笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T05:23:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/11/08/mongoDB与mongoose/" class="archive-article-date">
+  	<time datetime="2017-11-08T08:13:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</a><br><a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</a></p>
-<hr>
-<h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4>
+        <h4 id="mongoDB-amp-mongoose"><a href="#mongoDB-amp-mongoose" class="headerlink" title="mongoDB &amp; mongoose"></a>mongoDB &amp; mongoose</h4><p>windows 配置mongoDB<br><a href="http://www.jianshu.com/p/6b1b32f7fab7" target="_blank" rel="external">http://www.jianshu.com/p/6b1b32f7fab7</a></p>
         
-          <a class="article-more-a" href="/2017/10/23/flex-笔记/#more">more >></a>
+          <a class="article-more-a" href="/2017/11/08/mongoDB与mongoose/#more">more >></a>
         
       
 
@@ -474,15 +535,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">mongodb</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">flex</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">mongoose</a>
         		</li>
       		
 		</ul>
@@ -498,11 +559,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        			<a href="/categories/笔记/node/mongodb//" class="article-tag-list-link color3">mongodb</a>
         		</li>
       		
 		</ul>
@@ -537,20 +598,20 @@
 
 
   
-    <article id="post-css-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-node中使用mysql的demo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/css-笔记/">css 笔记</a>
+      <a class="article-title" href="/2017/11/08/node中使用mysql的demo/">node中使用mysql的demo</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/css-笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T05:20:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/11/08/node中使用mysql的demo/" class="archive-article-date">
+  	<time datetime="2017-11-08T08:07:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
 </a>
         
       </header>
@@ -558,10 +619,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li><h4 id="修改选中文字的颜色，兼容ie9-（包括ie9）"><a href="#修改选中文字的颜色，兼容ie9-（包括ie9）" class="headerlink" title="修改选中文字的颜色，兼容ie9+（包括ie9）"></a>修改选中文字的颜色，兼容ie9+（包括ie9）</h4></li>
+<li>一个简单的例子</li>
 </ul>
         
-          <a class="article-more-a" href="/2017/10/23/css-笔记/#more">more >></a>
+          <a class="article-more-a" href="/2017/11/08/node中使用mysql的demo/#more">more >></a>
         
       
 
@@ -575,11 +636,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
@@ -595,11 +656,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        			<a href="/categories/笔记/node/mysql//" class="article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
@@ -634,20 +695,203 @@
 
 
   
-    <article id="post-compass-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-nodejs中使用redis笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/compass-笔记/">compass 笔记</a>
+      <a class="article-title" href="/2017/11/08/nodejs中使用redis笔记/">nodejs中使用redis笔记</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/compass-笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T04:03:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/11/08/nodejs中使用redis笔记/" class="archive-article-date">
+  	<time datetime="2017-11-08T08:00:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h3><p><a href="https://redis.io/commands" target="_blank" rel="external">redis命令</a></p>
+<p><a href="http://www.yiibai.com/redis/redis_quick_guide.html" target="_blank" rel="external">http://www.yiibai.com/redis/redis_quick_guide.html</a></p>
+        
+          <a class="article-more-a" href="/2017/11/08/nodejs中使用redis笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">redis</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/node/redis//" class="article-tag-list-link color1">redis</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-linux-使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/25/linux-使用笔记/">linux 使用笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/25/linux-使用笔记/" class="archive-article-date">
+  	<time datetime="2017-10-25T06:36:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="ubuntu-amp-centos-使用笔记"><a href="#ubuntu-amp-centos-使用笔记" class="headerlink" title="ubuntu &amp; centos 使用笔记"></a>ubuntu &amp; centos 使用笔记</h3>
+        
+          <a class="article-more-a" href="/2017/10/25/linux-使用笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/笔记/linux//" class="article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-nodejs-使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/25/nodejs-使用笔记/">nodejs 使用笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/25/nodejs-使用笔记/" class="archive-article-date">
+  	<time datetime="2017-10-25T06:29:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-25</time>
 </a>
         
       </header>
@@ -655,11 +899,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>和sass一样依赖于ruby, 并且需要在sass或scss中使用</p>
+<p><a href="http://blog.fens.me/series-nodejs/" target="_blank" rel="external">从零开始nodejs系列文章</a></p>
 </blockquote>
-<h4 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h4>
         
-          <a class="article-more-a" href="/2017/10/23/compass-笔记/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/25/nodejs-使用笔记/#more">more >></a>
         
       
 
@@ -673,23 +916,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">compass</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">sprite</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">pm2</a>
         		</li>
       		
 		</ul>
@@ -705,11 +936,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/css//" class="article-tag-list-link color4">css</a>
+        			<a href="/categories/笔记/node//" class="article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -744,30 +971,29 @@
 
 
   
-    <article id="post-React-基础笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-gulp-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/React-基础笔记/">React 基础笔记</a>
+      <a class="article-title" href="/2017/10/24/gulp-笔记/">gulp 笔记</a>
     </h1>
   
 
         
-        <a href="/2017/10/23/React-基础笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T04:00:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
+        <a href="/2017/10/24/gulp-笔记/" class="archive-article-date">
+  	<time datetime="2017-10-24T05:11:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>中文文档 <a href="https://discountry.github.io/react/?utm_source=qq&amp;utm_medium=social" target="_blank" rel="external">https://discountry.github.io/react/?utm_source=qq&amp;utm_medium=social</a></p>
-<p>阮一峰的React技术栈系列教程 <a href="http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html</a></p>
+        <h5 id="中文网站：http-www-gulpjs-com-cn"><a href="#中文网站：http-www-gulpjs-com-cn" class="headerlink" title="中文网站：http://www.gulpjs.com.cn/"></a>中文网站：<a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">http://www.gulpjs.com.cn/</a></h5>
         
-          <a class="article-more-a" href="/2017/10/23/React-基础笔记/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/24/gulp-笔记/#more">more >></a>
         
       
 
@@ -785,7 +1011,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">gulp</a>
         		</li>
       		
 		</ul>
@@ -802,310 +1028,6 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/react//" class="article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-React-使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/React-使用笔记/">React 使用笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/23/React-使用笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T03:58:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="react点击事件传参，通过bind传递"><a href="#react点击事件传参，通过bind传递" class="headerlink" title="react点击事件传参，通过bind传递"></a>react点击事件传参，通过bind传递</h4><ul>
-<li>this.handleclick.bind（this，要传的参数）handleclick（要传的参数，event）</li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/10/23/React-使用笔记/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/react//" class="article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue-学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/vue-学习笔记/">vue 学习笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/23/vue-学习笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T03:52:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h4 id="ESLint-代码检查工具"><a href="#ESLint-代码检查工具" class="headerlink" title="ESLint  代码检查工具"></a>ESLint  代码检查工具</h4></blockquote>
-<ul>
-<li>function () {} ,function后的 () 需要前后空格</li>
-<li>字符串要用 ‘’,不能用 “”</li>
-<li>逗号 , 后需要一个空格</li>
-<li>每一级的缩进都需要两个空格</li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/10/23/vue-学习笔记/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/vue//" class="article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-canvas-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/canvas-笔记/">canvas 笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/23/canvas-笔记/" class="archive-article-date">
-  	<time datetime="2017-10-23T03:49:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>资料 <a href="https://segmentfault.com/a/1190000008071757" target="_blank" rel="external">https://segmentfault.com/a/1190000008071757</a></li>
-<li><p>手册 <a href="http://canvas.migong.org/html5-canvas" target="_blank" rel="external">http://canvas.migong.org/html5-canvas</a></p>
-</li>
-<li><p>初始化</p>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2017/10/23/canvas-笔记/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记//" class="article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/前端/canvas//" class="article-tag-list-link color2">canvas</a>
         		</li>
       		
 		</ul>
@@ -1142,7 +1064,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1237,10 +1159,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
@@ -1265,10 +1183,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">npm</a>
               </li>
              
@@ -1277,11 +1191,79 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vps</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jest</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mongoose</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">pm2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">typescript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">打包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
               </li>
             
             <div class="clearfix"></div>

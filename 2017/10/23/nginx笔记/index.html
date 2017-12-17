@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="youzheJ - blog">
 <meta property="og:description" content="安装">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-23T14:04:56.576Z">
+<meta property="og:updated_time" content="2017-12-17T12:28:41.755Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nginx 笔记">
 <meta name="twitter:description" content="安装">
@@ -61,6 +61,8 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/categories/文章">文章</a></li>
 	        
 				<li><a href="/categories/笔记">笔记</a></li>
 	        
@@ -112,6 +114,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -123,12 +127,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/categories/笔记">笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories/文章">文章</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/categories/笔记">笔记</a></li>
 		        
 				</ul>
 			</nav>
@@ -221,6 +227,13 @@
 </li>
 </ol>
 <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="string">...</span></div><div class="line">http &#123;</div><div class="line">    <span class="string">...</span></div><div class="line">    upstream test_server &#123;</div><div class="line">        server localhost<span class="function">:8080</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="string">...</span></div><div class="line">    server &#123;</div><div class="line">        <span class="string">...</span></div><div class="line">    &#125;</div><div class="line">    server &#123;</div><div class="line">        listen          80;</div><div class="line">        server_name     xxx.yuming.com www.xxx.yuming.com;</div><div class="line">        location / &#123;</div><div class="line">            proxy_pass       http:<span class="string">//test_server</span>;</div><div class="line">            proxy_<span class="keyword">set</span>_header Host $host;</div><div class="line">            proxy_<span class="keyword">set</span>_header X-Real-IP $remote_addr;</div><div class="line">            proxy_<span class="keyword">set</span>_header X-Forwarded-For $proxy_add_x_forwarded_for;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>增加一个静态服务器， 并通过二级域名访问</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">http &#123;</div><div class="line">    ...</div><div class="line">    server &#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">    server &#123;</div><div class="line">        listen          80;</div><div class="line">        server_name     xxx.yuming.com www.xxx.yuming.com;</div><div class="line">        location / &#123;</div><div class="line">            root        /xxx/xxx; <span class="comment"># 项目的具体位置</span></div><div class="line">            index       index.html; <span class="comment"># 根据实际而定</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>如果出现403错误， 可能是文件或文件夹的权限问题，需要检查一下root整个路径的权限</p>
+</blockquote>
 <hr>
 <h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4><ul>
 <li><p>ngnix.pid not found: 需要杀掉nginx</p>
@@ -486,10 +499,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
@@ -514,10 +523,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">npm</a>
               </li>
              
@@ -526,11 +531,79 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vps</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jest</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mongoose</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">pm2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">typescript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">打包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
               </li>
             
             <div class="clearfix"></div>

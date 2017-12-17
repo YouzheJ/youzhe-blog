@@ -2,6 +2,7 @@
 
 menu:
   主页: /
+  文章: /categories/文章
   笔记: /categories/笔记
   # 随笔: /tags/随笔/
 
